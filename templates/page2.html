@@ -1,0 +1,463 @@
+{% extends 'main.html'%}
+{% block content%}
+  <!-- Main Navigation -->
+  <header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <div class="container smooth-scroll">
+            <a class="navbar-brand" href="#"><strong>Learning System</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/navbar">Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'about' %}">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'register' %}" >Registration</a>
+                </li>
+                          
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'loginPage' %}">LogIn</a>
+                </li>
+              </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- Intro Section -->
+    <div id="home" class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('https://images.pexels.com/photos/5088008/pexels-photo-5088008.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+      <div class="mask rgba-stylish-light">
+        <div class="container h-100 d-flex justify-content-center align-items-center">
+            <div class="row pt-5 mt-3">
+                <div class="col-md-12 mb-3">
+                    <div class="intro-info-content text-center">
+                        <h1 class="display-3 white-text mb-5 wow fadeInDown" data-wow-delay="0.3s">ABOUT <a class="white-text font-weight-bold">US</a></h1>
+                        <h5 class="text-uppercase white-text mb-5 mt-1 font-weight-bold wow fadeInDown" data-wow-delay="0.3s">Your Gateway To Your Career! </h5>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+</header>
+<!-- Main Navigation -->
+
+<!-- Main Layout -->
+<main>
+
+    <div class="container">
+
+        <!-- Section: Team v.3 -->
+        <section id="team" class="section team-section pb-4 wow fadeIn" data-wow-delay="0.3s">
+
+            <!-- Section heading -->
+            <h2 class="font-weight-bold text-center h1 my-5">Our amazing team</h2>
+            <!-- Section description -->
+            <p class="text-center grey-text mb-5 mx-auto w-responsive">The mission of coaching leaders it to assist the leader in a short-term, intensive process in which goals and objectives have been developed with a strategic plan in order that the leader can reach the targets successfully.</p>
+
+            <!-- Grid row -->
+            <div class="row mb-lg-4 text-center text-md-left">
+
+                <!-- Grid column -->
+                <div class="col-lg-6 col-md-12 mb-4">
+
+                    <div class="col-md-6 float-left">
+                        <div class="avatar mx-auto mb-md-0 mb-3">
+                            <img src="https://thumbs.dreamstime.com/b/vector-illustration-avatar-dummy-logo-set-image-stock-isolated-object-icon-collection-137161298.jpg" class="z-depth-1" alt="First sample avatar image">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 float-right">
+                        <h4><strong> Faiza Abdullah</strong></h4>
+                        <h6 class="font-weight-bold grey-text mb-4">Qualification M.E (NED)</h6>
+                        <p class="grey-text">M.E (NED) in Physics, having 7 years of teaching experience.</p>
+
+                        <!-- Facebook -->
+                        <a class="p-2 m-2 fa-lg fb-ic"><i class="fab fa-facebook-f"> </i></a>
+                        <!-- Twitter -->
+                        <a class="p-2 m-2 fa-lg tw-ic"><i class="fab fa-twitter"> </i></a>
+                        <!-- Dribbble -->
+                        <a class="p-2 m-2 fa-lg dribbble-ic"><i class="fab fa-dribbble"> </i></a>
+                    </div>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-lg-6 col-md-12 mb-4">
+
+                    <div class="col-md-6 float-left">
+                        <div class="avatar mx-auto mb-md-0 mb-3">
+                            <img src="https://thumbs.dreamstime.com/b/vector-illustration-avatar-dummy-logo-set-image-stock-isolated-object-icon-collection-137161298.jpg" class="z-depth-1" alt="Second sample avatar image">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 float-right">
+                        <h4><strong>Javeria Arif</strong></h4>
+                       <h6 class="font-weight-bold grey-text mb-4"> Qualification BE (NUST)</h6>
+                        <p class="grey-text"> BE (NUST) in Mathematics, having 8 years of experience.</p>
+
+                        <!-- Facebook -->
+                        <a class="p-2 m-2 fa-lg fb-ic"><i class="fab fa-facebook-f"> </i></a>
+                        <!-- YouTube -->
+                        <a class="p-2 m-2 fa-lg yt-ic"><i class="fab fa-youtube"> </i></a>
+                        <!-- Instagram -->
+                        <a class="p-2 m-2 fa-lg ins-ic"><i class="fab fa-instagram"> </i></a>
+                    </div>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+            <!-- Grid row -->
+            <div class="row text-center text-md-left">
+
+                <!-- Grid column -->
+                <div class="col-lg-6 col-md-12 mb-4">
+
+                    <div class="col-md-6 float-left">
+                        <div class="avatar mx-auto mb-md-0 mb-3">
+                            <img src="https://thumbs.dreamstime.com/b/vector-illustration-avatar-dummy-logo-set-image-stock-isolated-object-icon-collection-137161298.jpg" class="z-depth-1" alt="Fourth sample avatar image">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 float-right">
+                        <h4><strong>Arisha Afzal</strong></h4>
+                        <h6 class="font-weight-bold grey-text mb-4"> Qualification BS (NED)</h6>
+                        <p class="grey-text">BS in Linguistic, having 4 years of working experience.</p>
+
+                        <!-- Facebook -->
+                        <a class="p-2 m-2 fa-lg fb-ic"><i class="fab fa-facebook-f"> </i></a>
+                        <!-- Twitter -->
+                        <a class="p-2 m-2 fa-lg tw-ic"><i class="fab fa-twitter"> </i></a>
+                       <!-- GitHub -->
+                        <a class="p-2 m-2 fa-lg git-ic"><i class="fab fa-github"> </i></a>
+                    </div>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="col-md-6 float-left">
+                        <div class="avatar mx-auto mb-md-0 mb-3">
+                            <img src="https://thumbs.dreamstime.com/b/vector-illustration-avatar-dummy-logo-set-image-stock-isolated-object-icon-collection-137161298.jpg" class="z-depth-1" alt="Fifth sample avatar image">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 float-right">
+                        <h4><strong>Mahnoor Shah</strong></h4>
+                       <h6 class="font-weight-bold grey-text mb-4"> Qualification Bsc(IBA)</h6>
+                        <p class="grey-text">BS (IBA) in Chemistry, having 6 years of experience.</p>
+
+                        <!-- Google + -->
+                        <a class="p-2 m-2 fa-lg gplus-ic"><i class="fab fa-google-plus-g"> </i></a>
+                        <!-- LinkedIn -->
+                        <a class="p-2 m-2 fa-lg li-ic"><i class="fab fa-linkedin-in"> </i></a>
+                        <!-- Email -->
+                        <a class="p-2 m-2 fa-lg email-ic"><i class="fas fa-envelope"> </i></a>
+                    </div>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </section>
+        <!-- Section: Team v.3 -->
+
+        <hr class="my-5">
+
+        <!-- Section: Features v.1 -->
+        <section id="products" class="text-center wow fadeIn" data-wow-delay="0.3s">
+
+            <!-- Section heading -->
+            <h1 class="font-weight-bold text-center h1 my-5">We create Group Coaching Environment</h1>
+            <!-- Section description -->
+            <p class="text-center grey-text mb-5 mx-auto w-responsive lead">The vision of coaching leaders is that coached Students advance toward targeted goals and objectives related to a specific performance event.</p>
+
+            <!-- Grid row -->
+            <div class="row">
+
+    
+                
+ 
+            </div>
+            <!-- Grid row -->
+
+        </section>
+        <!-- Section: Features v.1 -->
+        
+
+        <!-- /Section: Gallery -->
+
+        <hr class="my-5">
+
+       <!-- Section: Contact v.2 -->
+        
+<!-- Main Layout -->
+
+
+
+
+    <!-- Tab panels -->
+        <div class="tab-content">
+            <h1 class="font-weight-bold text-center h1 my-5">Our Courses</h1> 
+          <!--Panel 1-->
+          <div class="tab-pane fade  show active" id="panel11" role="tabpanel">
+            <br>
+
+            <!--Grid row-->
+            <div class="row">
+
+              <!--Grid column-->
+              <div class="col-md-12">
+
+                <!--Projects section v.4-->
+                <section class="text-center mb-5">
+
+                  <!--Grid row-->
+                  <div class="row mb-4">
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                      <div class="card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(41).jpg');">
+
+                        <!-- Content -->
+                        <div class="text-white text-center d-flex align-items-center rgba-blue-strong py-5 px-4">
+                          <div>
+                            <h3 class="mb-4 mt-4 font-weight-bold">
+                              <strong>Physics</strong>
+                            </h3>
+                            <p>Explore the universe through physics from the smallest micro particle to the vastness of galaxies.You will investigate key topic areas to gain a deeper understanding of the skills and techniques that you can apply throughout your A-level study.</p>
+                            <a href="{% url 'register' %}"class="btn btn-outline-white btn-sm">
+                              <i class="fas fa-clone left"></i> Enroll Now</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                      <div class="card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(14).jpg');">
+
+                        <!-- Content -->
+                        <div class="text-white text-center d-flex align-items-center rgba-teal-strong py-5 px-4">
+                          <div>
+                            <h3 class="mb-4 mt-4 font-weight-bold">
+                              <strong>Chemistry</strong>
+                            </h3>
+                            <p>you will be able to progress from a most basic knowledge of matter and energy to solving interesting real world chemical reaction stoichiometry problems. Each lesson in the course introduces some new concepts that allow you to build upon the materials</p>
+                            <a href="{% url 'register' %}"class="btn btn-outline-white btn-sm">
+                              <i class="fas fa-clone left"></i> Enroll Now</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+
+                  </div>
+                  <!--Grid row-->
+
+                  <!--Grid row-->
+                  <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                      <div class="card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(11).jpg');">
+
+                        <!-- Content -->
+                        <div class="text-white text-center d-flex align-items-center rgba-green-strong py-5 px-4">
+                          <div>
+                            <h3 class="mb-4 mt-4 font-weight-bold">
+                              <strong>Maths</strong>
+                            </h3>
+                            <p>This course by Imperial College London is designed to help you develop the skills you need to succeed in your A-level maths exams.Deep reasoning – analysing and critiquing mathematical techniques, arguments, formulae and proofs to comprehend how they can be applied</p>
+                            <a href="{% url 'register' %}"class="btn btn-outline-white btn-sm">
+                              <i class="fas fa-clone left"></i> Enroll Now</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                      <div class="card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(42).jpg');">
+
+                        <!-- Content -->
+                        <div class="text-white text-center d-flex align-items-center rgba-stylish-strong py-5 px-4">
+                          <div>
+                            <h3 class="mb-4 mt-4 font-weight-bold">
+                              <strong>English</strong>
+                            </h3>
+                            <p> English language courses are designed to make it easy for you to learn the universal language, helping you expand your social circle and give your career a boost.More importantly, our basic English classes include important vocabulary and phrases for business and tourism. </p>
+                            <a href="{% url 'register' %}"class="btn btn-outline-white btn-sm">
+                              <i class="fas fa-clone left"></i> Enroll Now</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+
+                  </div>
+                  <!--Grid row-->
+
+                </section>
+                <!--Projects section v.4-->
+
+              </div>
+              <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+          </div>
+          <!--/.Panel 1-->
+<section>
+          <div class="col-lg-12 col-md-12">
+
+            <p class="h1 text-center mb-4">Watch our "5 min Quick Start" tutorial</p>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nFx6yKZrzco" allowfullscreen></iframe>
+            </div>
+          </div>
+</section>
+<h1> </h1>
+  <!-- Footer -->
+<footer class="page-footer font-small stylish pt-4" style="background-color: #3f51b5; margin-top: 100px;">
+
+	<!-- Footer Links -->
+	<div class="container text-center text-md-left">
+  
+	  <!-- Grid row -->
+	  <div class="row">
+  
+		<!-- Grid column -->
+		<div class="col-md-4 mx-auto">
+  
+		  <!-- Content -->
+		  <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Coaching Management System</h5>
+		  <p>A perfect learning system, feel free to contact us</p>
+  
+		</div>
+		<!-- Grid column -->
+  
+		<hr class="clearfix w-100 d-md-none">
+  
+		<!-- Grid column -->
+		<div class="col-md-2 mx-auto">
+  
+		  <!-- Links -->
+		  <h5 class="font-weight-bold text-uppercase mt-3 mb-4"> Address</h5>
+		  <p> Kijowska 7/U5<br>Warsaw, 03-738<br>Poland</p>
+
+
+  
+	 
+		</div>
+		<!-- Grid column -->
+  
+		<hr class="clearfix w-100 d-md-none">
+  
+		<!-- Grid column -->
+		<div class="col-md-2 mx-auto">
+  
+<h5 class="font-weight-bold text-uppercase mt-3 mb-4"> contact Number</h5>
+		  <p> 0300-0000000 <br> 0300-111111</p>
+  
+		</div>
+		<!-- Grid column -->
+  
+		<hr class="clearfix w-100 d-md-none">
+  
+		<!-- Grid column -->
+
+		<div class="col-md-2 mx-auto">
+		<h5 class="font-weight-bold text-uppercase mt-3 mb-4"> Company tax ID:</h5>
+		  <p>US2542911940</p>
+		 
+
+
+  
+
+  
+		</div>
+		<!-- Grid column -->
+  
+	  </div>
+	  <!-- Grid row -->
+  
+	</div>
+	<!-- Footer Links -->
+  
+	<hr>
+  
+	<!-- Call to action -->
+	<ul class="list-unstyled list-inline text-center py-2">
+	  <li class="list-inline-item">
+		<h5 class="mb-1">Register for free</h5>
+	  </li>
+	  <li class="list-inline-item">
+		            <a href="{% url 'register' %}" class="btn btn-danger btn-rounded">Sign up!</a>
+
+
+	  </li>
+	</ul>
+	<!-- Call to action -->
+  
+	<hr>
+  
+	<!-- Social buttons -->
+	<ul class="list-unstyled list-inline text-center">
+	  <li class="list-inline-item">
+		<a class="btn-floating btn-fb mx-1">
+		  <i class="fab fa-facebook-f"> </i>
+		</a>
+	  </li>
+	  <li class="list-inline-item">
+		<a class="btn-floating btn-tw mx-1">
+		  <i class="fab fa-twitter"> </i>
+		</a>
+	  </li>
+	  <li class="list-inline-item">
+		<a class="btn-floating btn-gplus mx-1">
+		  <i class="fab fa-google-plus-g"> </i>
+		</a>
+	  </li>
+	  <li class="list-inline-item">
+		<a class="btn-floating btn-li mx-1">
+		  <i class="fab fa-linkedin-in"> </i>
+		</a>
+	  </li>
+	  <li class="list-inline-item">
+		<a class="btn-floating btn-dribbble mx-1">
+		  <i class="fab fa-dribbble"> </i>
+		</a>
+	  </li>
+	</ul>
+
+  
+  </footer>
+  <!-- Footer -->
+
+
+{% endblock%} -->

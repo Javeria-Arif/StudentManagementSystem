@@ -1,0 +1,128 @@
+{%load static %}
+
+
+
+<html>
+
+<head> 
+  
+ <link rel="stylesheet" type="text/css" href="{% static '/css/main.css'%}" >
+ <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" href="bam-icon.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet">
+    <title>Coaching System</title>
+    <style>
+      /* Required for full background image */
+    
+      html,
+      body,
+      header,
+      .view {
+        height: 100%;
+      }
+    
+      @media (max-width: 740px) {
+    
+        html,
+        body,
+        header,
+        .view {
+          height: 1000px;
+        }
+      }
+    
+      @media (min-width: 800px) and (max-width: 850px) {
+    
+        html,
+        body,
+        header,
+        .view {
+          height: 650px;
+        }
+      }
+    
+      .top-nav-collapse {
+        background-color: #3f51b5 !important;
+      }
+    
+      .navbar:not(.top-nav-collapse) {
+        background: transparent !important;
+      }
+    
+      @media (max-width: 991px) {
+        .navbar:not(.top-nav-collapse) {
+          background: #3f51b5 !important;
+        }
+      }
+    
+      .rgba-gradient {
+        background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+        background: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%));
+        background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+      }
+    
+      .card {
+        background-color: rgba(126, 123, 215, 0.2);
+      }
+    
+      .md-form label {
+        color: #ffffff;
+      }
+    
+      h6 {
+        line-height: 1.7;
+      }
+    </style>
+    
+</head>
+
+<body >
+
+{% block content%}
+
+{% include 'navbar.html' %}
+
+<!-- {% include 'card.html' %}  -->
+<!-- <h1>M Heading</h1>
+<p>My first paragraph.</p> -->
+
+{% endblock%}
+
+
+
+<!-- Optional JavaScript -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
+    <!--<script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>-->
+    <!--<script src="https://kit.fontawesome.com/19c2cde9bd.js" crossorigin="anonymous"></script>-->
+    <!--<script src="https://kit.fontawesome.com/8f8d45c15d.js" crossorigin="anonymous"></script>-->
+    <script src='{% static "/js/main.js"%}' ></script>
+
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script type=" https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+        <script type=" https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css <script type="></script>
+
+</body>
+</html>
